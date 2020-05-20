@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginPageBackgroundColor"
+    tools:context=".ProfileActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingTop="16dp">
+
+        <!-- First Name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/firstName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- LastName -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/lastName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Address-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/contact">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contactEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--      Top Length-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/topLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/topLength">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/topLengthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--   Chest  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/chest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/chest">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/chestEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--      Belly-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/belly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/belly">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bellyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--       Shoulder -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/shoulder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/shoulder">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/shoulderEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--       SleeveLength -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sleeveLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/sleeveLength">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sleeveLengthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        RoundSleeve-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/roundSleeve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/roundSleeve">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/roundSleeve_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--        Wrist-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/wrist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/wrist">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/wristEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        Neck-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/neck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/neck">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/neckEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        TrouserLength-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/trouserLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/trouserLength">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/trouserLengthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        Waist-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/waist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/waist">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/waistEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--       Hip -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/hip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/hip">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hipEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--      Lap -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/lap">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lapEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--     Kneel-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/kneel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/kneel">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kneelEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--    Down-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/down">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/downEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/saveButton"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/save"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+

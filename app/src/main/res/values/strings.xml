@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Udacity_Capstone</string>
+    <string name="measurement">Measurement</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+
+    <string name="app_home">Home</string>
+    <string name="app_profile">Profile</string>
+
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="contact">Contact</string>
+
+    <string name="topLength">Top Length</string>
+    <string name="chest">Chest</string>
+    <string name="belly">Belly</string>
+    <string name="shoulder">Shoulder</string>
+    <string name="sleeveLength">Sleeve Length</string>
+    <string name="roundSleeve">Round Sleeve</string>
+    <string name="wrist">Wrist</string>
+    <string name="neck">Neck</string>
+    <string name="trouserLength">Trouser Length</string>
+    <string name="waist">Waist</string>
+    <string name="hip">Hip</string>
+    <string name="lap">Lap</string>
+    <string name="kneel">Kneel</string>
+    <string name="down">Down</string>
+    <string name="update_button">Update</string>
+</resources>
