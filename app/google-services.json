@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "288599618311",
+    "firebase_url": "https://play-45715.firebaseio.com",
+    "project_id": "play-45715",
+    "storage_bucket": "play-45715.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288599618311:android:48d8585e5e3b41f723cba2",
+        "android_client_info": {
+          "package_name": "com.fashi.udacity_capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288599618311-o9kachj2rm4921bbb9r60nvgjs4t5jpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9onFrQKRm6IEA-vj7kWfBYEfR8IwTJRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288599618311-o9kachj2rm4921bbb9r60nvgjs4t5jpb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

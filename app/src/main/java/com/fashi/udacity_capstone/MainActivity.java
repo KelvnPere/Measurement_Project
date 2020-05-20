@@ -2,6 +2,7 @@ package com.fashi.udacity_capstone;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -17,6 +18,11 @@ import android.view.View;
 import com.fashi.udacity_capstone.adapter.ProfileAdapter;
 import com.fashi.udacity_capstone.database.AppDatabase;
 import com.fashi.udacity_capstone.database.ProfileEntry;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
@@ -30,12 +36,24 @@ public class MainActivity extends AppCompatActivity implements ProfileAdapter.It
     private ProfileAdapter mAdapter;
 
     private AppDatabase mDb;
+    private SearchView searchView;
+    private AdView mAdView;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         // Set the RecyclerView to its corresponding view
         mRecyclerView = findViewById(R.id.recyclerView);
