@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,22 +13,24 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.fashi.udacity_capstone.R;
 import com.fashi.udacity_capstone.database.ProfileEntry;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.TaskViewHolder> {
-
+public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.TaskViewHolder>  {
 
     // Member variable to handle item clicks
     final private ItemClickListener mItemClickListener;
     // Class variables for the List that holds task data and the Context
     private List<ProfileEntry> mProfileEntries;
+   // private List<ProfileEntry> mProfileEntriesFull;
     private Context mContext;
-
 
     public ProfileAdapter(Context context, ItemClickListener listener) {
         mContext = context;
         mItemClickListener = listener;
+       // mProfileEntriesFull = new ArrayList<>(mProfileEntries);
     }
+
 
     /**
      * Called when ViewHolders are created to fill a RecyclerView.
@@ -106,4 +110,40 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.TaskView
             mItemClickListener.onItemClickListener(elementId);
         }
     }
+
+//    @Override
+//    public Filter getFilter() {
+//        return profileFilter;
+//    }
+//
+//    private Filter profileFilter = new Filter() {
+//        @Override
+//        protected FilterResults performFiltering(CharSequence charSequence) {
+//            List<ProfileEntry> filteredList = new ArrayList<>();
+//
+//            if (charSequence == null || charSequence.length() == 0) {
+//                filteredList.addAll(mProfileEntriesFull);
+//            } else {
+//                String filterPattern = charSequence.toString().toLowerCase().trim();
+//
+//                for (ProfileEntry item : mProfileEntriesFull) {
+//                    if (item.getFirstName().toLowerCase().contains(filterPattern)) {
+//                        filteredList.add(item);
+//                    }
+//
+//                }
+//            }
+//            FilterResults results = new FilterResults();
+//            results.values = filteredList;
+//            return  results;
+//        }
+//
+//
+//        @Override
+//        protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+//            mProfileEntries.clear();
+//            mProfileEntries.addAll((List)filterResults.values);
+//            notifyDataSetChanged();
+//        }
+//    };
 }

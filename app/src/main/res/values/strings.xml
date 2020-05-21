@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Udacity_Capstone</string>
+    <string name="app_name">MeasureMe</string>
     <string name="measurement">Measurement</string>
     <string name="save">Save</string>
     <string name="update">Update</string>
@@ -26,4 +26,9 @@
     <string name="kneel">Kneel</string>
     <string name="down">Down</string>
     <string name="update_button">Update</string>
+    <string name="search">Search</string>
+    <string name="appwidget_text2">Doe</string>
+    <string name="appwidget_text3">Kelvin</string>
+    <string name="add_widget">Add widget</string>
+    <string name="homes">Home</string>
 </resources>
